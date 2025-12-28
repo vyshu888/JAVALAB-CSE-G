@@ -24,7 +24,7 @@ class DefaultPrimitiveType {
 }
 ```
 # OUTPUT:
-![output of primitive data types](exp1a_output.png)
+![Output](exp1a_output.png)
 ## TITLE : 1b.) Quadraticequation solution
 ```
 import java.util.Scanner;
@@ -62,5 +62,5 @@ class QuadraticEquationSolution {
 }
 ```
 # output:
-![output of quadraticequation solution](1boutput.png)
+![1b Output](1boutput.png)
 
