@@ -23,10 +23,8 @@ class DefaultPrimitiveType {
     }
 }
 ```
-## OUTPUT:
-
-![1a Output](./1a.output.png)
-
+### Output:
+![1a Output](experiment/1a.output.png)
 
 ## TITLE : 1b.) Quadratic equation solution
 ```java
@@ -66,7 +64,8 @@ class QuadraticEquationSolution {
     }
 }
 ```
-## output:
-![1b Output](1boutput.png)
+### Output:
+![1b Output](experiment/1boutput.png)
+
 
 
