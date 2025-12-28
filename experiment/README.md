@@ -24,8 +24,7 @@ class DefaultPrimitiveType {
 }
 ```
 ## OUTPUT:
-
-![1a Output](1a.output.png)
+![1a Output](experiment/1a.output.png)
 
 ## TITLE : 1b.) Quadratic equation solution
 ```
@@ -65,4 +64,5 @@ class QuadraticEquationSolution {
 ```
 ## output:
 ![1b Output](1boutput.png)
+
 
