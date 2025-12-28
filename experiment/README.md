@@ -25,7 +25,8 @@ class DefaultPrimitiveType {
 ```
 ## OUTPUT:
 
-![1a Output](1a.output.png)
+![1a Output](./1a.output.png)
+
 
 ## TITLE : 1b.) Quadratic equation solution
 ```java
