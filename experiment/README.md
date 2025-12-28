@@ -26,7 +26,6 @@ class DefaultPrimitiveType {
 }
 ```
 ## OUTPUT:
-## OUTPUT:
 ![1a Output](1a.output.png)
 
 ## TITLE : 1b.) Quadratic equation solution
