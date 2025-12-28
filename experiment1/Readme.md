@@ -24,4 +24,4 @@ class DefaultPrimitiveType {
 }
 ```
 # OUTPUT:
-![output of primitive data types](exp1a.png)
+![output of primitive data types](1a.output.png)
