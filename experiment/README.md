@@ -61,6 +61,6 @@ class QuadraticEquationSolution {
     }
 }
 ```
-# output:
+## output:
 ![1b Output](1boutput.png)
 
