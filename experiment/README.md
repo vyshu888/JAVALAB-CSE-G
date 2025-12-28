@@ -25,8 +25,7 @@ class DefaultPrimitiveType {
     }
 }
 ```
-```md
-## OUTPUT
+## OUTPUT:
 
 ![1a Output](1a.output.png)
 
