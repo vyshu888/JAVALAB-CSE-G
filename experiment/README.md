@@ -23,7 +23,7 @@ class DefaultPrimitiveType {
     }
 }
 ```
-### OUTPUT:
+#OUTPUT:
 https://github.com/vyshu888/JAVALAB-CSE-G/blob/8b915146ba10b36680b44e947c6eea91e6a02754/1a.output.png
 
 ## TITLE : 1b.) Quadratic equation solution
