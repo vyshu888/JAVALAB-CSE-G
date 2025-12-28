@@ -24,7 +24,8 @@ class DefaultPrimitiveType {
 }
 ```
 ## OUTPUT:
-![1a Output](1a.output.png)
+![1a Output](experiment/1a.output.png)
+
 ## TITLE : 1b.) Quadraticequation solution
 ```
 import java.util.Scanner;
