@@ -1,6 +1,8 @@
 # experiment 1
 ## TITLE : 1a.) DISPALY PRIMITIVE DATA TYPES
 ```java
+// program code here
+
 class DefaultPrimitiveType {
     byte primbyte;
     short primshort;
@@ -24,10 +26,13 @@ class DefaultPrimitiveType {
 }
 ```
 ## OUTPUT:
-![1a Output](experiment/1a.output.png)
+## OUTPUT:
+![1a Output](1a.output.png)
 
 ## TITLE : 1b.) Quadratic equation solution
-```
+```java
+// program code here
+
 import java.util.Scanner;
 class QuadraticEquationSolution {
     public static void main(String args[]) {
