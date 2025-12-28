@@ -62,5 +62,5 @@ class QuadraticEquationSolution {
 }
 ```
 # output:
-![output of quadraticequation solution](1boutput.PNG)
+![output of quadraticequation solution](1boutput.png)
 
