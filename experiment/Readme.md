@@ -25,3 +25,42 @@ class DefaultPrimitiveType {
 ```
 # OUTPUT:
 ![output of primitive data types](exp1a_output.png)
+## TITLE : 1b.) Quadraticequation solution
+```
+import java.util.Scanner;
+class QuadraticEquationSolution {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a value of a:");
+        double a = sc.nextDouble();
+        System.out.println("Enter a value of b:");
+        double b = sc.nextDouble();
+        System.out.println("Enter a value of c:");
+        double c = sc.nextDouble();
+        double D = b * b - 4 * a * c;
+        if (D > 0) {
+            double x1 = (-b + Math.sqrt(D)) / (2 * a);
+            double x2 = (-b - Math.sqrt(D)) / (2 * a);
+            System.out.println("Roots are real and distinct:");
+            System.out.println("x1 = " + x1);
+            System.out.println("x2 = " + x2);
+        } 
+        else if (D == 0) {
+            double y = -b / (2 * a);
+            System.out.println("The roots are real and equal:");
+            System.out.println("y = " + y);
+        } 
+        else {
+            double real = -b / (2 * a);
+            double img = Math.sqrt(-D) / (2 * a);
+            System.out.println("Roots are complex:");
+            System.out.println("x1 = " + real + " + " + img + "i");
+            System.out.println("x2 = " + real + " - " + img + "i");
+        }
+        sc.close();
+    }
+}
+```
+# output:
+![output of quadraticequation solution](1boutput.PNG)
+
