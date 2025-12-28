@@ -1,6 +1,6 @@
 # experiment 1
 ## TITLE : 1a.) DISPALY PRIMITIVE DATA TYPES
-```
+```java
 class DefaultPrimitiveType {
     byte primbyte;
     short primshort;
