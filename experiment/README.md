@@ -143,7 +143,7 @@ class Rectangle {
  }
 ```
 ## OUTPUT:
-![output for constructor]()
+![output for constructor](https://github.com/vyshu888/JAVALAB-CSE-G/blob/9ec9a1c9b784d126ef3edcdfb0850941cc1f9d2a/2c.output.png)
 
 
 
