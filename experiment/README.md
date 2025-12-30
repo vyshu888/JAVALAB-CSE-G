@@ -93,7 +93,7 @@ class Rectangle {
 
 ```
 ## OUTPUT:
-![output for mechanism in java](
+![output for mechanism in java](https://github.com/vyshu888/JAVALAB-CSE-G/blob/39bffddaca4df8c604a743521c0257e2c5428213/2a.output.png)
 
 
 
