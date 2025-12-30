@@ -117,7 +117,35 @@ class Rectangle {
  }
 ```
 ## OUTPUT:
-![output for overloading methods]()
+![output for overloading methods](https://github.com/vyshu888/JAVALAB-CSE-G/blob/33197d51f6477efa6b2faeabf9b5d3a2b3bb4f59/2b.output.png)
+## TITLE : TO IMPLEMENT CUNSTRUCTOR IN JAVA
+```
+ class Student {
+    String Sname;
+    int Sage;
+    double Smarks;
+    Student(String name, int age, double marks) {
+         Sname = name;
+         Sage = age;
+         Smarks = marks;
+    }
+    void display() {
+        System.out.println(" Student Name: " + Sname);
+        System.out.println(" Student Age: " + Sage);
+        System.out.println(" Student Marks: " + Smarks);
+    }
+}
+ class main {
+   public static void main(String args[]) {
+     Student  S = new Student("bunny",28,965);
+     S.display();
+   }
+ }
+```
+## OUTPUT:
+![output for constructor]()
+
+
 
 
 
