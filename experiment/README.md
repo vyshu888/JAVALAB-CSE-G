@@ -66,7 +66,7 @@ class QuadraticEquationSolution {
 ```
 ### Output:
 ![output for quadratic equation](https://github.com/vyshu888/JAVALAB-CSE-G/blob/5648c16460a1427b3b2dd7789ca7706d61ddfc30/1boutput.png)
-#experiment 2
+## experiment 2
 ## TITLE: 2a.) Implement class mechanism in java
 ```
 class Rectangle {
@@ -94,6 +94,33 @@ class Rectangle {
 ```
 ## OUTPUT:
 ![output for mechanism in java](https://github.com/vyshu888/JAVALAB-CSE-G/blob/39bffddaca4df8c604a743521c0257e2c5428213/2a.output.png)
+## TITLE: 2b.) Implementing overloading methods in java
+```
+ class sum {
+    int sum(int a,int b) {
+      return a + b;
+   }
+   int sum(int a,int b,int c) {
+      return a + b +c;
+   }
+   double sum(double a,double b) {
+      return a + b;
+   }
+ }
+ class main {
+  public static void main(String args[]) {
+    sum s = new sum();
+    System.out.println("sum of 2 integers:" + s.sum(36,46));
+    System.out.println("sum of 3 integers:" + s.sum(20,36,46));
+    System.out.println("sum of two real number:" + s.sum(30-465,15-675));
+  }
+ }
+```
+## OUTPUT:
+![output for overloading methods]()
+
+
+
 
 
 
