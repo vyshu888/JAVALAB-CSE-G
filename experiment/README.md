@@ -198,7 +198,7 @@ import java.util.Scanner;
          System.out.println("Fibonacis sequence and cannot be calculated");
       }
  }
-![output for Fibonacis]()
+![output for Fibonacis](https://github.com/vyshu888/JAVALAB-CSE-G/blob/d67dbba7359e805290a629db4716ac951598acb7/additional%20output.png)
 
 
 
