@@ -144,10 +144,9 @@ class Rectangle {
 ```
 ## OUTPUT:
 ![output for constructor](https://github.com/vyshu888/JAVALAB-CSE-G/blob/9ec9a1c9b784d126ef3edcdfb0850941cc1f9d2a/2c.output.png)
-# ADDITIONAL EXPERIMENT 2
-## TITLE : Fibonacis series in java
-```
- class Fibonacis {
+# Additional experiment 2
+## TITLE : Fibonacis series
+class Fibonacis {
     int firstNumber;
     int secondNumber;
     int thirdNumber;
@@ -198,7 +197,6 @@ import java.util.Scanner;
          System.out.println("Fibonacis sequence and cannot be calculated");
       }
  }
-```
 ![output for Fibonacis](https://github.com/vyshu888/JAVALAB-CSE-G/blob/d67dbba7359e805290a629db4716ac951598acb7/additional%20output.png)
 
 
