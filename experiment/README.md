@@ -228,7 +228,7 @@ class main {
     std1.display();
   }
  }
-![output]()
+![output](https://github.com/vyshu888/JAVALAB-CSE-G/blob/156d6c7919c0a57bbd0c2f551a91a7e4e5ff632c/3a%20output.png)
 ## BINARYSEARCH MECHANISM
 ```
 import java.util.Scanner;
