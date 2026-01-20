@@ -201,7 +201,7 @@ import java.util.Scanner;
 ```
 ![output for Fibonacis](https://github.com/vyshu888/JAVALAB-CSE-G/blob/d67dbba7359e805290a629db4716ac951598acb7/additional%20output.png)
 # EXPERIMENT 3
-## TITLE :CONSTRUCTOR OVERLOADING IN JAVA
+## TITLE :3A.)CONSTRUCTOR OVERLOADING IN JAVA
 ```
  class student {
    String name;
@@ -230,7 +230,7 @@ class main {
  }
 ```
 ![output](https://github.com/vyshu888/JAVALAB-CSE-G/blob/156d6c7919c0a57bbd0c2f551a91a7e4e5ff632c/3a%20output.png)
-## BINARYSEARCH MECHANISM
+## TITLE :3B.) BINARYSEARCH MECHANISM
 ```
 import java.util.Scanner;
 
