@@ -200,7 +200,106 @@ import java.util.Scanner;
  }
 ```
 ![output for Fibonacis](https://github.com/vyshu888/JAVALAB-CSE-G/blob/d67dbba7359e805290a629db4716ac951598acb7/additional%20output.png)
+# EXPERIMENT 3
+## TITLE :CONSTRUCTOR OVERLOADING IN JAVA
+```
+ class student {
+   String name;
+   int age;
+   double marks;
+   student() {
+   }
+   student(String name,int age,double marks) {
+      this.name = name;
+      this.age = age;
+      this.marks = marks;
+   }
+   void display() {
+     System.out.println("student name:" + name);
+     System.out.println("student age:" + age);
+     System.out.println("student marks:" + marks);
+   }
+ }
+class main {
+  public static void main(String args[]) {
+    student std = new student();
+    std.display();
+    student std1 = new student("bunny",21,999.9);
+    std1.display();
+  }
+ }
+![output]()
+## BINARYSEARCH MECHANISM
+```
+import java.util.Scanner;
 
+class Binarysearch {
+    int list[];
+    int size;
+
+    Binarysearch(int size) {
+        this.size = size;
+        list = new int[size];
+    }
+
+    void setlist() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the list items in Ascending order:");
+        
+        for (int i = 0; i < size; i++) {
+            System.out.println("Enter value " + (i + 1) + ": ");
+            list[i] = sc.nextInt();
+        }
+    }
+
+    void getlist() {
+        for (int i = 0; i < size; i++)
+            System.out.print(list[i] + ",");
+        System.out.println("\b\b.");
+    }
+
+    int Binarysearch(int key) {
+        int low = 0;
+        int high = list.length - 1;
+
+        while (low <= high) {
+            int mid = (low + high) / 2;
+
+            if (list[mid] == key)
+                return mid;
+
+            else if (list[mid] < key)
+                low = mid + 1;
+
+            else
+                high = mid - 1;
+        }
+
+        return -1; 
+    }
+}
+import java.util.Scanner;
+
+class main {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+
+        Binarysearch bs = new Binarysearch(10);
+
+        bs.setlist();
+        bs.getlist();
+
+        System.out.println("Enter the key to search: ");
+        int key = sc.nextInt();
+
+        int index = bs.Binarysearch(key);
+
+        if (index == -1)
+            System.out.println("Key item does NOT exist.");
+        else
+            System.out.println("Key item exists at index: " + index);
+    }
+}
 
 
 
