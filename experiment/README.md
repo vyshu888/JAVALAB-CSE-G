@@ -435,6 +435,7 @@ class ElectricBike extends Motorbike {
     }
 }
 ```
+![output](https://github.com/vyshu888/JAVALAB-CSE-G/blob/3b1b440fcfb9fe9e77b668b3763140e0799ac442/4b.output.png)
 ##TITLE : 4c.)
 ```
  abstract class Figure {
