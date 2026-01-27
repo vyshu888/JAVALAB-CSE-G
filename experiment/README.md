@@ -349,7 +349,7 @@ import java.util.Scanner;
 ```
 ![output](https://github.com/vyshu888/JAVALAB-CSE-G/blob/f8eb0b9104684e55eaf45310c60d33bd91de28a3/3c%20output.png)
 #EXPERIMENT -4:
-## TITLE : 4a.) SINGLE INHERITANCE
+## TITLE : 4a.) SINGLE INHERITANCE:
 ```
 class Person {
     String name;
@@ -397,7 +397,7 @@ class Person {
 }
 ```
 ![output](https://github.com/vyshu888/JAVALAB-CSE-G/blob/a9c23ae3f6f704ee2e93ff0e057f21ca163f66aa/4a.output.png)
-## TITLE : 4B.) MULTIPLE INHERITANCE
+## TITLE : 4B.) MULTIPLE INHERITANCE:
 ```
 class Bicycle {
     String pedalType;
@@ -436,7 +436,7 @@ class ElectricBike extends Motorbike {
 }
 ```
 ![output](https://github.com/vyshu888/JAVALAB-CSE-G/blob/3b1b440fcfb9fe9e77b668b3763140e0799ac442/4b.output.png)
-##TITLE : 4c.)
+##TITLE : 4c.) ABSTRACT CLASS IN JAVA TO FIND AREA IN DIFFERENT SHAPES:
 ```
  abstract class Figure {
      double dim1;
@@ -476,7 +476,7 @@ class ElectricBike extends Motorbike {
       }
  }
 ```
-![output]()
+![output](https://github.com/vyshu888/JAVALAB-CSE-G/blob/e9784e3296eb6e1c227625e1442d27d6e5a95090/4c.output.png)
 
 
 
