@@ -396,7 +396,7 @@ class Person {
     }
 }
 ```
-![output]()
+![output](https://github.com/vyshu888/JAVALAB-CSE-G/blob/a9c23ae3f6f704ee2e93ff0e057f21ca163f66aa/4a.output.png)
 ## TITLE : 4B.) MULTIPLE INHERITANCE
 ```
 class Bicycle {
