@@ -504,7 +504,31 @@ import java.util.Scanner;
 }
 ```
 ![output]()
-
+# Additional experiment 3
+```
+import java.util.Scanner;
+ class PalindromeCheck {
+   public static void main(String args[]) {
+     Scanner sc = new Scanner(System.in);
+     System.out.print("enter a string:");
+     String str = sc.nextLine();
+     int start = 0;
+     int end = str.length() - 1;
+     while(start < end) {
+     if(str.charAt(start) != str.charAt(end)) {
+     System.out.println("str is  \"" + str + "\" not  Palindrome");
+     sc.close();
+     return;
+     }
+     start++;
+     end--;
+     }
+     System.out.println("str \"" + str + "\" is a Palindrome");
+     sc.close();
+     }
+ }
+```
+![output]()
 
 
 
