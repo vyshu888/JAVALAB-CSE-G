@@ -477,6 +477,33 @@ class ElectricBike extends Motorbike {
  }
 ```
 ![output](https://github.com/vyshu888/JAVALAB-CSE-G/blob/e9784e3296eb6e1c227625e1442d27d6e5a95090/4c.output.png)
+# Additional experiment 1
+## TITLE : INSERT SUBSTRING
+```
+import java.util.Scanner;
+ class InsertSubstring {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("mainString: ");
+        String mainString = sc.nextLine();
+        System.out.print("subString: ");
+        String subString = sc.nextLine();
+        System.out.print("position: ");
+        int position = sc.nextInt();
+        if (position < 0 || position > mainString.length()) {
+        System.out.println("Invalid Position");
+        } else {
+            String firstPart = mainString.substring(0, position);
+            String secondPart = mainString.substring(position);
+            String resultString = firstPart + subString + secondPart;
+            System.out.println("Resultant String: " + resultString);
+        }
+
+        sc.close();
+    }
+}
+```
+![output]()
 
 
 
