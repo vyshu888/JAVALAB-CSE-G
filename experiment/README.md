@@ -554,7 +554,7 @@ class PerfectNumber {
     }
 }
 ```
-![OUTPUT]()
+![OUTPUT](https://github.com/vyshu888/JAVALAB-CSE-G/blob/c2bfbe10f591728ad1f602232b5f4df06d45c122/add%204.png)
 
 
 
