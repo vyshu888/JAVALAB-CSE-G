@@ -612,6 +612,7 @@ TITLE : 5A.)IMPLEMENT INTERFACE
         display(bar);
     }
 }
+```
 ![OUTPUT](https://github.com/vyshu888/JAVALAB-CSE-G/blob/8ee9f629dae3076803062b6c6eda3a6486779b05/5a.....png)
 ## TITLE :5B.) IMPLEMENT RUNTIME POLYMORPHISM
 ```
