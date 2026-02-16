@@ -658,7 +658,7 @@ class Vehicle {
     }
 }
 ```
-![output]()
+![output](https://github.com/vyshu888/JAVALAB-CSE-G/blob/49d6f0cda1dac9979dc64946695c41f5f345e78c/5c........png)
 
 
 
