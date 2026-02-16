@@ -556,7 +556,7 @@ class PerfectNumber {
 ```
 ![OUTPUT](https://github.com/vyshu888/JAVALAB-CSE-G/blob/c2bfbe10f591728ad1f602232b5f4df06d45c122/add%204.png)
 #EXPERIMENT 5
-TITLE : 5A.)IMPLEMENT INTERFACE
+## TITLE : 5A.)IMPLEMENT INTERFACE
 ```
  interface Sortable {
     void sort(int arr[]);
@@ -646,7 +646,7 @@ class Vehicle {
 }
 ```
 ![OUTPUT](https://github.com/vyshu888/JAVALAB-CSE-G/blob/e12bc2a5a1ee82db45d061e2ebd55c7f41153ee3/5b.......png)
-#TITLE :5C.)STRING BUFFFER TO DELETE,REMOVE CHARACTER
+##TITLE :5C.)STRING BUFFFER TO DELETE,REMOVE CHARACTER
 ```
  class StringBufferDelete {
     public static void main(String[] args) {
