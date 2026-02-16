@@ -646,7 +646,7 @@ class Vehicle {
 }
 ```
 ![OUTPUT](https://github.com/vyshu888/JAVALAB-CSE-G/blob/e12bc2a5a1ee82db45d061e2ebd55c7f41153ee3/5b.......png)
-##TITLE :5C.)STRING BUFFFER TO DELETE,REMOVE CHARACTER
+## TITLE :5C.)STRING BUFFFER TO DELETE,REMOVE CHARACTER
 ```
  class StringBufferDelete {
     public static void main(String[] args) {
