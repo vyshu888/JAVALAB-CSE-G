@@ -726,7 +726,7 @@ import java.util.InputMismatchException;
           }
         }
 ```
-![output]()
+![output](https://github.com/vyshu888/JAVALAB-CSE-G/blob/79a7d90df47195ef31e5baad783c513d89ed82aa/6b.png)
 ## Title : 6c.) CREATION OF JAVA BUILT -IN EXCEPTIONS
 ```
 import java.util.Scanner;
