@@ -771,6 +771,36 @@ class BuiltinException {
 }
 ```
 ![output](https://github.com/vyshu888/JAVALAB-CSE-G/blob/45da9b517f5bf58ded6f77790b04b1090abeb108/6c.png)
+## EXPERIMENT 7
+## TITLE: 7A.) CREATION OF USER DEFINED EXCEPTION
+```
+class InvalidCountryException extends Exception {
+          InvalidCountryException() {
+              super();
+              }
+              InvalidCountryException(String message) {
+              super(message);
+              }
+            }
+  class UserRegion {
+         void registerUser(String userName,String userCountry,throwsCountryException) {
+                  if(UserCountry != "India") {
+                throw new InvalidCountryException("User outside India cannot be registered");
+                }
+              else {
+                  System.out.println("User registration done successfully");
+               }
+             public static void main(String args[]) {
+                    UserRegistration ur = UserRegistration();
+                 try {
+                      ur.registerUSer("Ravi","USA");
+                   }
+                   catch(InavlidCountryException e) {
+                      System.out.println(e.getmessage());
+                      }
+                    }
+```
+![output]()
 
 
 
