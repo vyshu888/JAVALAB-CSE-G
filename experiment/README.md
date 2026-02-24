@@ -896,7 +896,7 @@ public class ThreadDemo {
     }
 }
 ```
-![output]()
+![output](https://github.com/vyshu888/JAVALAB-CSE-G/blob/11766b37ac1a6d2e4705a9b9d5a6d1c0e74e3da2/7c.png)
 
 
 
