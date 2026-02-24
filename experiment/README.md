@@ -800,7 +800,7 @@ class InvalidCountryException extends Exception {
                       }
                     }
 ```
-![output]()
+![output](https://github.com/vyshu888/JAVALAB-CSE-G/blob/d3bc37f96f73f4423e80e26c8cecab2a9a46f4a3/7a.png)
 ## TITLE : 7B.) CREATES THREADS
 ```
 class GoodMorningThread extends Thread {
