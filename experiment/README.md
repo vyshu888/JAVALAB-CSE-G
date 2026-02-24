@@ -661,7 +661,7 @@ class Vehicle {
 ```
 ![output](https://github.com/vyshu888/JAVALAB-CSE-G/blob/49d6f0cda1dac9979dc64946695c41f5f345e78c/5c........png)
 ## EXPERIMENT 6
-## TITLE : EXCEPTION HANDLING IN JAVA
+## TITLE :6a.)  EXCEPTION HANDLING IN JAVA
 ```
 import java.util.Scanner;
 
@@ -693,8 +693,8 @@ class ExceptionHandling {
     }
 }
 ```
-![output]()
-## Title : MUltiple catch clauses
+![output](https://github.com/vyshu888/JAVALAB-CSE-G/blob/5537bfe9a4197741b7ba965d8763edb449769ec6/6a.png)
+## Title : 6b.) MUltiple catch clauses
 ```
 import java.util.Scanner;
 import java.util.InputMismatchException;
@@ -727,7 +727,7 @@ import java.util.InputMismatchException;
         }
 ```
 ![output]()
-## Title : CREATION OF JAVA BUILT -IN EXCEPTIONS
+## Title : 6c.) CREATION OF JAVA BUILT -IN EXCEPTIONS
 ```
 import java.util.Scanner;
 
