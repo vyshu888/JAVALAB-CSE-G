@@ -770,7 +770,7 @@ class BuiltinException {
     }
 }
 ```
-![output]()
+![output](https://github.com/vyshu888/JAVALAB-CSE-G/blob/45da9b517f5bf58ded6f77790b04b1090abeb108/6c.png)
 
 
 
