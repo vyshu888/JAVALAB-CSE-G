@@ -660,6 +660,117 @@ class Vehicle {
 }
 ```
 ![output](https://github.com/vyshu888/JAVALAB-CSE-G/blob/49d6f0cda1dac9979dc64946695c41f5f345e78c/5c........png)
+## EXPERIMENT 6
+## TITLE : EXCEPTION HANDLING IN JAVA
+```
+import java.util.Scanner;
+
+class ExceptionHandling {
+    public static void main(String args[]) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter the size of array:");
+        int n = sc.nextInt();
+
+        int[] arr = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            System.out.println("Enter an element at index " + i + ":");
+            arr[i] = sc.nextInt();
+        }
+
+        System.out.println("Enter an index to access:");
+        int index = sc.nextInt();
+
+        try {
+            System.out.println("The element at index " + index + " is: " + arr[index]);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Invalid index! Please enter index between 0 and " + (n - 1));
+        }
+
+        sc.close();
+    }
+}
+```
+![output]()
+## Title : MUltiple catch clauses
+```
+import java.util.Scanner;
+import java.util.InputMismatchException;
+  class MultipleCatch {
+   public static void main(String args[]) {
+    Scanner sc = new Scanner(System.in);
+    int [] arr = {1,2,3,4,5};
+      try {
+       System.out.println("Enter first number:");
+          int a = sc.nextInt();
+       System.out.println("Enter second number:");
+          int b = sc.nextInt();
+          int result = a/b;
+      System.out.println("Result =" +result);
+      System.out.println("Enter index to access array element:");
+          int index = sc.nextInt();
+      System.out.println("Element at index = " +arr[index]);
+         }
+       catch(ArithmeticException e) {
+        System.out.println("Error: Division by zero is not allowed.");
+        }
+        catch(InputMismatchException e) {
+          System.out.println("Error: Please enter numeric values only.");
+          }
+          catch(ArrayIndexOutOfBoundsException e) {
+            System.out.println("Some other error occured.");
+            }
+            System.out.println("Program continues...");
+          }
+        }
+```
+![output]()
+## Title : CREATION OF JAVA BUILT -IN EXCEPTIONS
+```
+import java.util.Scanner;
+
+class BuiltinException {
+    public static void main(String args[]) {
+
+        Scanner sc = new Scanner(System.in);
+
+        try {
+            System.out.print("Enter an integer to divide 100: ");
+            int n = sc.nextInt();
+            int result = 100 / n;
+            System.out.println("Result = " + result);
+
+            int arr[] = new int[3];
+            System.out.println("The array element of index 5 is " + arr[5]);
+
+            System.out.print("Enter a number as text: ");
+            String s = sc.next();
+            int a = Integer.parseInt(s);
+        }
+
+        catch (ArithmeticException e) {
+            System.out.println("Arithmetic Exception: Division by zero " + e);
+        }
+
+        catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Array Index Out Of Bounds Exception: Invalid index");
+        }
+
+        catch (NumberFormatException e) {
+            System.out.println("Number Format Exception: Invalid numeric format");
+        }
+
+        catch (Exception e) {
+            System.out.println("Some other exception occurred: " + e);
+        }
+
+        sc.close();
+    }
+}
+```
+![output]()
 
 
 
