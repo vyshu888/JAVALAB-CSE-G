@@ -854,7 +854,7 @@ class TestThreads {
            }
          }
 ```
-![output]()
+![output](https://github.com/vyshu888/JAVALAB-CSE-G/blob/91d37bd695943dc7ee644b5c9156b4efe3447a01/7b.png)
 ## TITLE :7C.) ILLUSTRATING IS ALIVE AND JOIN
 ```
  class LongRunningTask extends Thread {
