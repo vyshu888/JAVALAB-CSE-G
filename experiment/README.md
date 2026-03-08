@@ -897,10 +897,65 @@ public class ThreadDemo {
 }
 ```
 ![output](https://github.com/vyshu888/JAVALAB-CSE-G/blob/11766b37ac1a6d2e4705a9b9d5a6d1c0e74e3da2/7c.png)
+## EXPERIMENT 11
+## TITLE: RAILWAY RESERVATION
+```
+class Reservation {
 
+    int availableBerths = 5;   // Total available berths
 
+    // Synchronized method for booking
+    synchronized void bookTicket(String name, int berths) {
 
+        System.out.println(name + " is trying to reserve " + berths + " berth(s)");
 
+        if (berths <= availableBerths) {
+            System.out.println("Booking successful for " + name);
+            availableBerths = availableBerths - berths;
+            System.out.println("Berths left: " + availableBerths);
+        } 
+        else {
+            System.out.println("No berths available for " + name);
+        }
+
+        System.out.println("---------------------------");
+    }
+}
+
+class Person extends Thread {
+
+    Reservation res;
+    String personName;
+    int requiredBerths;
+
+    Person(Reservation r, String name, int berths) {
+        res = r;
+        personName = name;
+        requiredBerths = berths;
+    }
+
+    public void run() {
+        res.bookTicket(personName, requiredBerths);
+    }
+}
+
+public class RailwayReservation {
+
+    public static void main(String[] args) {
+
+        Reservation r = new Reservation();
+
+        Person p1 = new Person(r, "Ram", 2);
+        Person p2 = new Person(r, "Sita", 2);
+        Person p3 = new Person(r, "Ravi", 2);
+
+        p1.start();
+        p2.start();
+        p3.start();
+    }
+}
+```
+![output]()
 
 
 
