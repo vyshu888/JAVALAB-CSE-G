@@ -897,6 +897,259 @@ public class ThreadDemo {
 }
 ```
 ![output](https://github.com/vyshu888/JAVALAB-CSE-G/blob/11766b37ac1a6d2e4705a9b9d5a6d1c0e74e3da2/7c.png)
+## EXPERIMENT 8
+## TITLE : 8A.) ILLUSTRATING DAEMON THREADS
+```class DaemonThread extends Thread {
+
+    public void run() {
+        while (true) {
+            try {
+                System.out.println("Daemon thread running");
+                Thread.sleep(500);
+            } 
+            catch (InterruptedException e) {
+                System.out.println(e);
+            }
+        }
+    }
+}
+
+class UserThread extends Thread {
+
+    public void run() {
+        for (int i = 1; i <= 5; i++) {
+            try {
+                System.out.println("User thread iteration: " + i);
+                Thread.sleep(1000);
+            } 
+            catch (InterruptedException e) {
+                System.out.println(e);
+            }
+        }
+    }
+}
+
+public class TestDaemon {
+
+    public static void main(String[] args) {
+
+        UserThread userThread = new UserThread();
+        DaemonThread daemonThread = new DaemonThread();
+
+        daemonThread.setDaemon(true);   // setting daemon thread
+
+        userThread.start();
+        daemonThread.start();
+    }
+}
+```
+![output]()
+## TITLE : 8B.) PRODUCER CONSUMER PROBLEM
+```
+class Buffer {
+
+    int[] buffer;
+    int count = 0;
+    int in = 0;
+    int out = 0;
+
+    Buffer(int size) {
+        buffer = new int[size];
+    }
+
+    // Producer method
+    synchronized void produce(int item) {
+        try {
+            while (count == buffer.length) {
+                wait();   // buffer full
+            }
+
+            buffer[in] = item;
+            in = (in + 1) % buffer.length;
+            count++;
+
+            notify();   // notify consumer
+        } 
+        catch (InterruptedException e) {
+            System.out.println(e);
+        }
+    }
+
+    // Consumer method
+    synchronized int consume() {
+        int item = 0;
+
+        try {
+            while (count == 0) {
+                wait();   // buffer empty
+            }
+
+            item = buffer[out];
+            out = (out + 1) % buffer.length;
+            count--;
+
+            notify();   // notify producer
+        } 
+        catch (InterruptedException e) {
+            System.out.println(e);
+        }
+
+        return item;
+    }
+}
+
+class Producer extends Thread {
+
+    Buffer buffer;
+
+    Producer(Buffer b) {
+        buffer = b;
+    }
+
+    public void run() {
+        for (int i = 1; i <= 10; i++) {
+            buffer.produce(i);
+            System.out.println("Produced: " + i);
+
+            try {
+                Thread.sleep(500);
+            } 
+            catch (InterruptedException e) {
+                System.out.println(e);
+            }
+        }
+    }
+}
+
+class Consumer extends Thread {
+
+    Buffer buffer;
+
+    Consumer(Buffer b) {
+        buffer = b;
+    }
+
+    public void run() {
+        for (int i = 1; i <= 10; i++) {
+            int item = buffer.consume();
+            System.out.println("Consumed: " + item);
+
+            try {
+                Thread.sleep(800);
+            } 
+            catch (InterruptedException e) {
+                System.out.println(e);
+            }
+        }
+    }
+}
+
+public class ProducerConsumer {
+
+    public static void main(String[] args) {
+
+        Buffer buffer = new Buffer(5);
+
+        Producer p = new Producer(buffer);
+        Consumer c = new Consumer(buffer);
+
+        p.start();
+        c.start();
+    }
+}
+```
+![ouput]()
+## TITLE : 8C.) USER DEFINED PACKAGES
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## EXPERIMENT 11
 ## TITLE: RAILWAY RESERVATION
 ```
@@ -952,6 +1205,90 @@ public class RailwayReservation {
         p1.start();
         p2.start();
         p3.start();
+    }
+}
+```
+![output]()
+## ADDITIONAL EXP 5
+## TITLE : CRICKET TEAM
+```
+import java.util.Scanner;
+
+class Cricket {
+
+    String playerName;
+    String teamName;
+    double battingAverage;
+
+    // Constructor
+    Cricket(String p, String t, double b) {
+        playerName = p;
+        teamName = t;
+        battingAverage = b;
+    }
+
+    // Method to display player details
+    void display() {
+        System.out.println("Player: " + playerName + ", Batting Average: " + battingAverage);
+    }
+}
+
+public class CricketTeam {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter number of players: ");
+        int n = sc.nextInt();
+        sc.nextLine();
+
+        Cricket[] players = new Cricket[n];
+
+        // Input player details
+        for (int i = 0; i < n; i++) {
+
+            System.out.println("Enter details of Player " + (i + 1));
+
+            System.out.print("Name: ");
+            String name = sc.nextLine();
+
+            System.out.print("Team: ");
+            String team = sc.nextLine();
+
+            System.out.print("Batting Average: ");
+            double avg = sc.nextDouble();
+            sc.nextLine();
+
+            players[i] = new Cricket(name, team, avg);
+        }
+
+        // Team wise display
+        for (int i = 0; i < n; i++) {
+
+            boolean printed = false;
+
+            // check if team already printed
+            for (int j = 0; j < i; j++) {
+                if (players[i].teamName.equals(players[j].teamName)) {
+                    printed = true;
+                    break;
+                }
+            }
+
+            if (!printed) {
+
+                System.out.println("\nTeam: " + players[i].teamName);
+
+                for (int k = 0; k < n; k++) {
+                    if (players[k].teamName.equals(players[i].teamName)) {
+                        players[k].display();
+                    }
+                }
+            }
+        }
+
+        sc.close();
     }
 }
 ```
