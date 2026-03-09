@@ -1058,7 +1058,7 @@ public class ProducerConsumer {
     }
 }
 ```
-![ouput]()
+![ouput](https://github.com/vyshu888/JAVALAB-CSE-G/blob/4fb2d5e958886ca3beb4ad5b8938c1d2fc8fa485/8b.java.png)
 ## TITLE : 8C.) USER DEFINED PACKAGES
 ```
 ```
