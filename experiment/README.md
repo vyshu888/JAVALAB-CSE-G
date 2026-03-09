@@ -1120,7 +1120,7 @@ public class RailwayReservation {
     }
 }
 ```
-![output]()
+![output](https://github.com/vyshu888/JAVALAB-CSE-G/blob/2ceb15e5b614721b2c09588993919387662ddc39/java%2011.png)
 ## ADDITIONAL EXP 5
 ## TITLE : CRICKET TEAM
 ```
