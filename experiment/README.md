@@ -1204,7 +1204,7 @@ public class CricketTeam {
     }
 }
 ```
-![output]()
+![output](https://github.com/vyshu888/JAVALAB-CSE-G/blob/90acce92e9ce6f65de2b3d488c03145b5e6cbce4/ADD%205.png)
 
 
 
