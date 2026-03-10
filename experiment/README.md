@@ -1103,7 +1103,7 @@ public class Calculate {
     }
 }
 ```
-![output]()
+![output](https://github.com/vyshu888/JAVALAB-CSE-G/blob/345e40aaa46dd05e9e55c4685489c926df7a502e/8c.png)
 ## EXPERIMENT 11
 ## TITLE: RAILWAY RESERVATION
 ```
